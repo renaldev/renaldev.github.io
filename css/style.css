@@ -1,0 +1,277 @@
+/* ------------------------  Reset ------------------------ */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	background: transparent;
+	font-size: 100%; 
+}
+
+/* --------------------- Common settings ------------------- */
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	background: #fff;
+	font: 33.33px Lato, Arial, Verdana, sans-serif;
+	color: #000;
+}
+
+#wrap {
+	max-width: 1800px;
+	min-width: 320px;
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+h1 {
+	font: 3em 'Playfair Display', 'Times New Roman', serif;
+}
+
+h2 {
+	font: 1.7em Lato, Arial, Verdana, sans-serif;
+}
+
+/* ------------------------ Header ------------------- */
+
+header {
+	background: #f0f1f6 url(../img/header-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 20% 2.5% 3%;
+}
+
+header h1 {
+	margin-bottom: 5.3%;
+}
+
+.contact {
+	margin: 0 0 14.1% 0.3%;
+}
+
+.contact img {
+	width: 192px;
+}
+
+.social-networks {
+	margin-left: 1.7%;
+}
+
+.social-networks img {
+	width: 27px;
+}
+
+.social-networks a + a {
+	margin-left: 1.3%;
+}
+.social-networks img {
+	vertical-align: middle;
+}
+
+/* ------------------------ Content ------------------- */
+.content {
+	padding: 7% 7.6% 13.8%;
+}
+
+/* Left column */
+.left {
+	width: 52.5%;
+	float: left;
+	margin-right: 9.5%;
+	overflow: hidden;
+}
+
+.left article {
+	padding-bottom: 6.3%;
+}
+
+.post-header {
+	margin: 0 0 7.5% 0.6%;
+	font-size: 0.9em;
+}
+
+.avatar {
+	float: left;
+	width: 12.5%;
+	margin-right: 3.8%;
+}
+
+.avatar img{
+	width: 100%;
+}
+
+.post-info {
+	padding-top: 0.6%;
+}
+
+.app {
+	display: inline-block;
+	margin-left: 3.2%;
+	position: relative;
+	top: 2px;
+}
+
+.app img {
+	width: 25px;
+}
+
+.time {
+	display: inline;
+	color: #515151;
+}
+
+.article-picture {
+	width: 100%;
+}
+
+article h2 {
+	padding: 1.3% 0;
+}
+
+article > p {
+	margin-bottom: 5%;
+}
+
+/* Right column */
+.right {
+	width: 38%;
+	float: right;
+	padding: 0.3% 0 6.3%;
+	overflow: hidden;
+}
+
+.right p {
+	margin-bottom: 7%;
+}
+
+.important {
+	font: 1.25em 'Playfair Display', 'Times New Roman', serif;
+}
+
+.center-pic {
+	margin-bottom: 6%;
+}
+
+.center-pic img {
+	width: 100%;
+}
+
+.left-pic {
+	float: left;
+	width: 45%;
+}
+
+.left-pic img {
+	width: 100%;
+}
+
+.right-pic {
+	float: right;
+	width: 45.5%;
+}
+
+.right-pic img{
+	width: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+	body {
+		font-size: 22px;
+	}
+	header {
+		padding-top: 11%;
+	}
+	header h1 {
+		margin-bottom: 4%;
+	}
+	.contact {
+		margin-bottom: 9%;
+	}
+	.contact img {
+		width: 150px;
+	}
+	.social-networks img {
+		width: 22px;
+	}	
+	.app {
+		margin-left: 2%;
+		top: 1px;
+	}	
+	.app img {
+		width: 16px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	body {
+		font-size: 18px;
+	}
+	.contact img {
+		width: 120px;
+	}
+	.social-networks img {
+		width: 20px;
+	}	
+	.app {
+		margin-left: 1.7%;
+	}
+	.app img {
+		width: 13px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.social-networks img {
+		width: 18px;
+	}	
+	.avatar {
+		width: 17%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.post-header {
+		font-size: 0.8em;
+	}
+	.app img {
+		width: 12px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 14px;
+	}
+	.contact img {
+		width: 90px;
+	}
+	.social-networks img {
+		width: 15px;
+	}	
+	.app {
+		margin-left: 1.3%;
+	}
+	.app img {
+		width: 10px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.social-networks img {
+		width: 12px;
+	}	
+	.post-header {
+		font-size: 0.65em;
+	}
+	.app img {
+		width: 7px;
+	}
+}
