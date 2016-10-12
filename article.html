@@ -1,115 +1,355 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Article</title>
 		<meta charset = "utf-8" />
-		<link rel = "stylesheet" href = "css/style.css" />	
-		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Playfair+Display|Lato&subset=latin,cyrillic">
+		
+		<title>Article</title>
+		
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 		<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+		
+		<link rel = "stylesheet" href = "css/bootstrap.min.css" />
+		<link rel = "stylesheet" href = "css/main.css" />	
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Playfair+Display%7CLato&subset=latin,cyrillic">
+		<link rel = "stylesheet" href = "css/media.css" />	
+
+		<script src = "https://use.fontawesome.com/d76203238d.js"></script>
 	</head>
 	
 	<body>
-	<!-- Wrap start -->
-		<div id = "wrap">
+	<!-- Container start -->
+		<div class = "container-fluid">
 		<!--Header start-->
-			<header>
-				<h1>Cemal Can Dinça</h1>
-				<div class = "contact">
-					<a href = "mailto:#"><img src = "img/contact_me.gif" alt = "Contact me" /></a>
-				</div>
-				<div class = "social-networks">
-					<a href = "#"><img src = "img/LinkedIn_icon.gif" alt = "LinkedIn" /></a>
-					<a href = "#"><img src = "img/vk_icon.gif" alt = "vk" /></a>
-					<a href = "#"><img src = "img/whatsapp_icon.gif" alt = "WhatsApp" /></a>
-					<a href = "#"><img src = "img/instagram_icon.gif" alt = "Instagram" /></a>
-					<a href = "#"><img src = "img/twitter_icon.gif" alt = "Twitter" /></a>
+			<header class = "row">
+				<div class = "col-xs-12 header-grid"> 
+					<h1>Cemal Can Dinça</h1>
+					<div class = "contact">
+						<a href = "mailto:#">
+							<img src = "img/contact_me.gif" alt = "Contact me" />
+						</a>
+					</div>
+					<div class = "social-networks">
+						<a href = "#">
+							<img src = "img/LinkedIn_icon.gif" alt = "LinkedIn" />
+						</a>
+						<a href = "#">
+							<img src = "img/vk_icon.gif" alt = "vk" />
+						</a>
+						<a href = "#">
+							<img src = "img/whatsapp_icon.gif" alt = "WhatsApp" />
+						</a>
+						<a href = "#">
+							<img src = "img/instagram_icon.gif" alt = "Instagram" />
+						</a>
+						<a href = "#">
+							<img src = "img/twitter_icon.gif" alt = "Twitter" />
+						</a>
+					</div>
 				</div>
 			</header>
 		<!-- Header end -->
 		<!-- Content start -->
-			<div class = "content">
+			<div class = "row content">
 			<!-- Left column start -->
-				<div class = "left">
+				<div class = "col-xs-12 col-sm-7 left">
 				<!-- Article start -->
-					<article>
-						<div class = "post-header">
-							<div class = "avatar">
-								<a href = "#"><img src = "img/avatar.png" alt = "Avatar" /></a>
+					<article>		
+						<div class = "media">
+							<div class = "media-left">
+								<a href = "#">
+									<img class = "media-object img-circle" src = "img/avatar.png" alt = "Avatar">
+								</a>
 							</div>
-							<div class = "post-info">
-								<p><a href = "#">Cemal Can Dinçq</a></p>
-								<p class = "time"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></p>
-								<div class = "app">
-									<a href = "#"><img src = "img/instagram_icon.gif" alt = "Instagram" /></a>
+							<div class = "media-body">
+								<div class = "media-heading">
+									<div class = "author">
+										<a href = "#">Cemal Can Dinçq</a>
+									</div>
+									<div class = "metadata">
+										<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+									</div>
+									<div class = "app">
+										<a href = "#">
+											<img src = "img/instagram_icon.gif" alt = "Instagram" />
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 						<img class = "article-picture" src = "img/hand.jpg" alt = "Hand" />
-						<h2>one</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros. Vestibulum volutpat nulla vel lectus ornare vestibulum. Vivamus eros ante, sollicitudin sit amet lectus eu, elementum dapibus purus.</p>
-						<p>Ut facilisis turpis at vestibulum fringilla. Donec faucibus libero non nibh pharetra tristique. Morbi sed mattis lorem.</p>
-						<p>Etiam rhoncus malesuada orci sed ultricies. Vivamus ultrices, sem maximus fermentum facilisis, massa eros commodo lectus, ut tempus odio orci quis felis. Donec eget erat imperdiet turpis blandit dapibus. Curabitur vitae volutpat tellus. Pellentesque auctor semper augue, ac scelerisque nibh ornare sed.</p>
-					<!-- Comments start -->
-						<section>
-							<h3>2 comments</h3>
-							<form class = "comment-form" name = "comment-form" action = "#" method = "post" autocomplete = "off">
-								<label for = "comment-field"><p>Your comment</p></label>
-								<textarea id = "comment-field" type = "text" name = "comment-field" value = "" />
-								</textarea>
-								<button class = "btn">Post</button>
-							</form>
-							<div class = "comment">
-								<div class = "avatar">
-									<a href = "#"><img src = "img/avatar.png" alt = "Avatar" /></a>
-								</div>
-								<div class = "post-info">
-									<p><a href = "#">Cemal Can Dinçq</a></p>
-									<p class = "time"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></p>
-									<div class = "app">
-										<a href = "#"><img src = "img/instagram_icon.gif" alt = "Instagram" /></a>
-									</div>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros. Vestibulum volutpat nulla vel lectus ornare vestibulum. Vivamus eros ante, sollicitudin sit amet lectus eu, elementum dapibus purus.</p>
-							</div>
-							<div class = "comment">
-								<div class = "avatar">
-									<a href = "#"><img src = "img/avatar.png" alt = "Avatar" /></a>
-								</div>
-								<div class = "post-info">
-									<p><a href = "#">Cemal Can Dinçq</a></p>
-									<p class = "time"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></p>
-									<div class = "app">
-										<a href = "#"><img src = "img/instagram_icon.gif" alt = "Instagram" /></a>
-									</div>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros. Vestibulum volutpat nulla vel lectus ornare vestibulum. Vivamus eros ante, sollicitudin sit amet lectus eu, elementum dapibus purus.</p>
-							</div>
-						</div>
-						</section>
-					<!-- Comments end -->
+						<h2>One</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros.</p>
 					</article>
 				<!-- Article end -->
+				<!-- Comments section start -->	
+					<section class = "comments">
+						<h3 class = "title-comments">Comments (6)</h3>
+					<!-- Appreciation start -->	
+						<div class = "appreciation">
+							<div class = "recommend" title = "Recommend">
+								<i class="fa fa-heart" aria-hidden="true"></i>								
+								Recommend
+							</div>  
+							<div class = "share" title = "Share">
+								<a href = "#">
+									<i class = "fa fa-share" aria-hidden = "true"></i>
+									Share
+								</a>
+							</div> 
+						</div>
+					<!-- Appreciation end -->	
+					<!-- New comment start -->	
+						<form class = "form-horizontal comment-form" name = "comment-form" action = "#" method = "post" autocomplete = "off">
+							<div class = "form-group new-comment">
+								<div class = "col-xs-2 new-avatar">
+									<img class = "img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+								</div>
+								<label class = "col-xs-10 control-label">
+									<textarea class = "form-control comment-field" rows = "2" name = "comment-field" placeholder = "Your comment..."></textarea>
+								</label>
+							</div>
+							<div class = "form-group">
+								<div class = "col-xs-offset-8 col-xs-4">
+									<button type = "submit" class = "btn btn-default">Post</button>
+								</div>
+							</div>
+						</form>
+					<!-- New comment end -->	
+					<!-- Comments start -->
+						<ul class = "media-list">
+						<!-- Comment 1 (level 1) -->
+							<li class = "media">
+								<div class = "media-left">
+									<a href = "#">
+										<img class = "media-object img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+									</a>
+								</div>
+								<div class = "media-body">
+									<div class = "media-heading">
+										<div class = "author">
+											<a href = "#">Author</a>
+										</div>
+										<div class = "metadata">
+											<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+										</div>
+									</div>
+									<div class = "media-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius. Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.</div>
+									<div class = "footer-comment">
+										<span class = "vote plus" title = "Like">
+											<i class = "fa fa-thumbs-up"></i>
+										</span>       
+										<span class = "rating">+1</span>
+										<span class = "vote minus" title = "Dislike">
+											<i class = "fa fa-thumbs-down"></i>
+										</span>
+										<span class = "devide">|</span>
+										<span class = "comment-reply">
+											<a href = "#" class = "reply">Reply</a>
+										</span>
+									</div>						 
+								<!-- Nested comment 1 (level 2) -->
+									<div class = "media">
+										<div class = "media-left">
+											<a href = "#">
+												<img class = "media-object img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+											</a>
+										</div>
+										<div class = "media-body">
+											<div class = "media-heading">
+												<div class = "author">
+													<a href = "#">Author</a>
+												</div>
+												<div class = "metadata">
+													<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+												</div>
+											</div>
+											<div class = "media-text">Dolor sit, amet, consectetur, adipisci velit. Aperiam eaque ipsa, quae. Amet, consectetur, adipisci velit, sed quia consequuntur magni dolores. Ab illo inventore veritatis et quasi architecto. Quisquam est, omnis voluptas nulla. Obcaecati cupiditate non numquam eius modi tempora. Corporis suscipit laboriosam, nisi ut labore et aut reiciendis.</div>
+											<div class = "footer-comment">
+												<span class = "vote plus" title="Like">
+													<i class = "fa fa-thumbs-up"></i>
+												</span>       
+												<span class = "rating">+0</span>
+												<span class = "vote minus" title = "Dislike">
+													<i class = "fa fa-thumbs-down"></i>
+												</span>
+												<span class = "devide">|</span>
+												<span class = "comment-reply">
+													<a href = "#" class = "reply">Reply</a>
+												</span>
+											</div>								  
+										<!-- Nested comment 1 (level 3) -->
+											<div class = "media">
+												<div class = "media-left">
+													<a href = "#">
+														<img class = "media-object img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+													</a>
+												</div>
+												<div class = "media-body">
+													<div class = "media-heading">
+														<div class = "author">
+															<a href = "#">Author</a>
+														</div>
+														<div class = "metadata">
+															<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+														</div>
+													</div>
+													<div class = "media-text">Amet, consectetur, adipisci velit, sed ut labore et dolore. Maiores alias consequatur aut perferendis doloribus asperiores. Voluptas nulla vero eos. Minima veniam, quis nostrum exercitationem ullam corporis. Atque corrupti, quos dolores eos, qui blanditiis praesentium voluptatum deleniti atque corrupti. Quibusdam et harum quidem rerum necessitatibus saepe eveniet, ut enim ipsam. Magni dolores et dolorum fuga nostrum exercitationem ullam. Eligendi optio, cumque nihil molestiae consequatur.</div>
+													<div class = "footer-comment">
+														<span class = "vote plus" title = "Like">
+															<i class = "fa fa-thumbs-up"></i>
+														</span>       
+														<span class = "rating">+5</span>
+														<span class = "vote minus" title = "Dislike">
+															<i class = "fa fa-thumbs-down"></i>
+														</span>
+														<span class = "devide">|</span>
+														<span class = "comment-reply">
+															<a href = "#" class = "reply">Reply</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										<!-- Nested comment 1 (level 3) end -->
+								 		</div>
+									</div>
+								<!-- Nested comment 1 (level 2) end) -->
+								<!-- Nested comment 2 (level 2) -->
+									<div class = "media">
+										<div class = "media-left">
+											<a href = "#">
+												<img class = "media-object img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+											</a>
+										</div>
+										<div class = "media-body">
+											<div class = "media-heading">
+												<div class = "author">
+													<a href = "#">Author</a>
+												</div>
+												<div class = "metadata">
+													<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+												</div>
+											</div>
+											<div class = "media-text">Ex ea voluptate velit esse, quam nihil impedit, quo minus id quod. Totam rem aperiam eaque ipsa, quae ab illo. Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid. Iste natus error sit voluptatem. Sunt, explicabo deleniti atque corrupti, quos dolores et expedita.</div>
+											<div class = "footer-comment">
+												<span class = "vote plus" title = "Like">
+													<i class = "fa fa-thumbs-up"></i>
+												</span>       
+												<span class = "rating">+1</span>
+												<span class = "vote minus" title = "Dislike">
+													<i class = "fa fa-thumbs-down"></i>
+												</span>
+												<span class = "devide">|</span>
+												<span class = "comment-reply">
+													<a href = "#" class = "reply">Reply</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								<!-- Nested comment 2 (level 2) end -->	
+								</div>
+							</li>
+						<!-- Comment 1 (level 1) end -->
+						<!-- Comment 2 (level 1) -->
+							<li class = "media">
+								<div class = "media-left">
+									<a href = "#">
+										<img class = "media-object img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+									</a>
+								</div>
+								<div class = "media-body">
+									<div class = "media-heading">
+										<div class = "author">
+											<a href = "#">Author</a>
+										</div>
+										<div class = "metadata">
+											<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+										</div>
+									</div>
+									<div class = "media-text">Eum iure reprehenderit, qui dolorem eum fugiat. Sint et expedita distinctio velit. Architecto beatae vitae dicta sunt, explicabo unde omnis. Qui aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto. Nemo enim ipsam voluptatem quia. Eos, qui ratione voluptatem sequi nesciunt, neque porro. A sapiente delectus, ut enim ipsam voluptatem, quia non recusandae architecto beatae.</div>
+									<div class = "footer-comment">
+										<span class = "vote plus" title = "Like">
+											<i class = "fa fa-thumbs-up"></i>
+										</span>       
+										<span class = "rating">+2</span>
+										<span class = "vote minus" title = "Dislike">
+											<i class = "fa fa-thumbs-down"></i>
+										</span>
+										<span class = "devide">|</span>
+										<span class = "comment-reply">
+											<a href = "#" class = "reply">Reply</a>
+										</span>
+									</div>
+								</div>
+							</li>
+						<!-- Comment 2 (level 1) end) -->
+						<!-- Comment 3 (level 1) -->
+							<li class = "media">
+								<div class = "media-left">
+									<a href = "#">
+										<img class = "media-object img-circle" src = "img/comment_avatar.png" alt = "Avatar">
+									</a>
+								</div>
+								<div class = "media-body">
+									<div class = "media-heading">
+										<div class = "author">
+											<a href = "#">Author</a>
+										</div>
+										<div class = "metadata">
+											<span class = "date"><time datetime = "2016-05-07T22:21">Last Sunday at 11:03 AM</time></span>
+										</div>
+									</div>
+									<div class = "media-text">Tempore, cum soluta nobis est et quas. Quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in. Obcaecati cupiditate non recusandae impedit. Hic tenetur a sapiente delectus. Facere possimus, omnis dolor repellendus inventore veritatis et voluptates. Ipsa, quae ab illo inventore veritatis et quasi architecto beatae. In culpa, qui in culpa. Cum soluta nobis est laborum et aut perferendis doloribus. Vitae dicta sunt, explicabo perspiciatis. Amet, consectetur, adipisci velit, sed quia voluptas sit, aspernatur. Obcaecati cupiditate non provident, similique sunt in. Reiciendis voluptatibus maiores alias consequatur aut officiis debitis aut perferendis doloribus asperiores. Assumenda est, omnis dolor repellendus voluptas assumenda est omnis.</div>
+									<div class = "footer-comment">
+										<span class = "vote plus" title = "Like">
+											<i class = "fa fa-thumbs-up"></i>
+										</span>       
+										<span class = "rating">+0</span>
+										<span class = "vote minus" title = "Dislike">
+											<i class = "fa fa-thumbs-down"></i>
+										</span>
+										<span class = "devide">|</span>
+										<span class = "comment-reply">
+											<a href = "#" class = "reply">Reply</a>
+										</span>
+									</div>
+								</div>
+							</li>
+						<!-- Comment 3 (level 1) end -->
+						</ul>
+					<!-- Comments end -->	
+					</section>
+				<!-- Comments section end -->				
 				</div>
 			<!-- Left column end -->
 			<!-- Right column start -->
-				<div class = "right">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros. Vestibulum volutpat nulla vel lectus ornare vestibulum. Vivamus eros ante, sollicitudin sit amet lectus eu, elementum dapibus purus.</p>
-					<p class = "important">Ut facilisis turpis at vestibulum fringilla. Donec faucibus libero non nibh pharetra tristique. Morbi sed mattis lorem.</p>
-					<p>Etiam rhoncus malesuada orci sed ultricies. Vivamus ultrices, sem maximus fermentum facilisis, massa eros commodo lectus, ut tempus odio orci quis felis. Donec eget erat imperdiet turpis blandit dapibus. Curabitur vitae volutpat tellus. Pellentesque auctor semper augue, ac scelerisque nibh ornare sed.</p>
-					<div class = "center-pic">
-						<img src = "img/bedside_table.jpg" alt = "Bedside table" />
-					</div>
-					<div class = "left-pic">
-						<img src = "img/rowan.jpg" alt = "Rowan" />
-					</div>
-					<div class = "right-pic">
-						<img src = "img/chair.jpg" alt = "Chair" />
+				<div class = "col-sm-5 hidden-xs right">
+					<div class = "row">
+						<div class = "col-sm-12 about">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam erat ligula, eu pretium tellus rutrum et. Etiam eget imperdiet enim, in luctus metus. Praesent a interdum eros. Vestibulum volutpat nulla vel lectus ornare vestibulum. Vivamus eros ante, sollicitudin sit amet lectus eu, elementum dapibus purus.</p>
+							<p class = "lead">Ut facilisis turpis at vestibulum fringilla. Donec faucibus libero non nibh pharetra tristique. Morbi sed mattis lorem.</p>
+							<p>Etiam rhoncus malesuada orci sed ultricies. Vivamus ultrices, sem maximus fermentum facilisis, massa eros commodo lectus, ut tempus odio orci quis felis. Donec eget erat imperdiet turpis blandit dapibus. Curabitur vitae volutpat tellus. Pellentesque auctor semper augue, ac scelerisque nibh ornare sed.</p>
+						</div>
+						<div class = "col-sm-12 center-pic">
+							<img src = "img/bedside_table.jpg" alt = "Bedside table" />
+						</div>
+						<div class = "col-sm-6 left-pic">
+							<img src = "img/rowan.jpg" alt = "Rowan" />
+						</div>
+						<div class = "col-sm-6 right-pic">
+							<img src = "img/chair.jpg" alt = "Chair" />
+						</div>
 					</div>
 				</div>
 			<!-- Right column end -->
 			</div>
 		<!-- Content end -->
 		</div>
-	<!-- Wrap end -->
+	<!-- Container end -->
 	</body>
 </html>

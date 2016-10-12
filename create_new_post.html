@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		
+		<title>Article</title>
+		
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+		<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+		
+		<link rel = "stylesheet" href = "css/bootstrap.min.css" />
+		<link rel = "stylesheet" href = "css/main.css" />	
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Playfair+Display%7CLato&subset=latin,cyrillic">
+		<link rel = "stylesheet" href = "css/media.css" />
+		<link href="//cdn.quilljs.com/1.0.6/quill.snow.css" rel="stylesheet">
+		<link href="//cdn.quilljs.com/1.0.6/quill.bubble.css" rel="stylesheet">
+
+
+		<script src = "https://use.fontawesome.com/d76203238d.js"></script>
+		<script src="https://cdn.quilljs.com/1.0.6/quill.js"></script>
+	</head>
+	
+	<body>
+	<!-- Container start -->
+		<div class = "container-fluid">
+		<!--Header start-->
+			<header class = "row">
+				<div class = "col-xs-12 header-grid"> 
+					<h1>Charlie Brown</h1>
+					<div class = "contact">
+						<a href = "mailto:#">
+							<img src = "img/contact_me.gif" alt = "Contact me" />
+						</a>
+					</div>
+					<div class = "social-networks">
+						<a href = "#">
+							<img src = "img/LinkedIn_icon.gif" alt = "LinkedIn" />
+						</a>
+						<a href = "#">
+							<img src = "img/vk_icon.gif" alt = "vk" />
+						</a>
+						<a href = "#">
+							<img src = "img/whatsapp_icon.gif" alt = "WhatsApp" />
+						</a>
+						<a href = "#">
+							<img src = "img/instagram_icon.gif" alt = "Instagram" />
+						</a>
+						<a href = "#">
+							<img src = "img/twitter_icon.gif" alt = "Twitter" />
+						</a>
+					</div>
+				</div>
+			</header>
+		<!-- Header end -->
+		<!-- Content start -->
+			<div class = "row content">
+			<!-- Left column start -->
+				<article id="editor">
+					<h3>Create Post</h3>
+					<br>
+					<form>
+						<input required='' type='text'>
+						<label alt='Article Title' placeholder='Type your Article Title'></label>
+						<br>
+						<textarea required='' type='text'></textarea>
+						<label alt='Article Description' placeholder='Type your Article Description'></label>
+						<br>
+						<div id="content">
+							<p>Some text!</p>
+						</div>
+					</form>
+				</article>
+			</div>
+			<!-- Left column end -->
+		</div>
+	<!-- Container end -->
+	</body>
+
+	<!-- Initialize Quill editor -->
+	<script type="text/javascript">
+		var quill = new Quill('#content', {
+			theme: 'snow'
+		});
+	</script>
+</html>
