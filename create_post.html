@@ -54,39 +54,43 @@
 		<!-- Header end -->
 		<!-- Content start -->
 			<div class = "row content">
-			<!-- Left column start -->
-				<article id="editor">
-					<form>
-						<div class = "form-group">
-							<div class="create-post-header col-xs-10">
-								<h3>Create Post</h3>
-								<br>
-							</div>
-							<div class = "btn-container col-xs-2">
-								<button type = "submit" class = "btn btn-default">Save and publish</button>
-							</div>
+			<!-- Article editor start -->
+				<article class = "editor">
+					<form class = "editor-form" name = "editor-form" action = "#" method = "post">
+						<h3 class = "col-xs-8">Create Post</h3>
+						<div class = "btn-container col-xs-4">
+							<button type = "submit" class = "btn btn-default pull-right">Save and publish</button>
 						</div>
-						<input required='' type='text'>
-						<label alt='Article Title' placeholder='Type your Article Title'></label>
-						<br>
-						<textarea required='' type='text'></textarea>
-						<label alt='Article Description' placeholder='Type your Article Description'></label>
-						<br>
-						<div id="content">
+						<div class="clearfix"></div>
+					<!-- Article title start -->
+						<div class = "form-group">
+							<input type = "text" id = "article-title" class = "article-title form-control" name = "article-title" required>
+							<label for = "article-title" data-alt = "Article Title" data-placeholder = "Type your Article Title"></label>
+						</div>
+					<!-- Article title end -->
+					<!-- Article description start -->	
+						<div class = "form-group">
+							<textarea id = "article-description" class = "article-description form-control" name = "article-description" required></textarea>
+							<label for = "article-description" data-alt = "Article Description" data-placeholder = "Type your Article Description"></label>
+						</div>
+					<!-- Article description end -->	
+					<!-- Text editor start -->	
+						<div id = "content">
 							<p>Some text!</p>
 						</div>
+					<!-- Text editor end -->	
 					</form>
 				</article>
 			</div>
-			<!-- Left column end -->
+			<!-- Article editor end -->
 		</div>
 	<!-- Container end -->
-	</body>
 
 	<!-- Initialize Quill editor -->
-	<script type="text/javascript">
-		var quill = new Quill('#content', {
-			theme: 'snow'
-		});
-	</script>
+		<script type = "text/javascript">
+			var quill = new Quill('#content', {
+				theme: 'snow'
+			});
+		</script>
+	</body>
 </html>
